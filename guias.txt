@@ -1,0 +1,19 @@
+tutorial sapui5:
+https://developers.sap.com/group.cp-frontend-ui5-1.html
+
+SAPUI5 y servicios oData
+http://www.uxsap.com/p/tutoriales.html
+
+http://www.uxsap.com/2016/12/sapui5-como-comenzamos.html#more
+
+odata crud
+https://blogs.sap.com/2015/02/05/simple-exercise-on-odata-and-sap-ui5-application-for-the-basic-crud-operation/
+
+
+libros
+https://drive.google.com/open?id=1D5NODHF4EhooklfAH4oobGYN0j-_YR0a
+
+https://drive.google.com/open?id=1JzngyCv_33IciKLqNvpFD2rM-FyK99sP
+
+documentacion sapui5
+https://sapui5.hana.ondemand.com/
