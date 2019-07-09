@@ -119,6 +119,7 @@ En un Elemento de Datos definimos el dominio y la descripción del campo al que 
 <p align="justify">
 Una vez tenemos creados los Dominos y Elementos de Datos, crearemos la Tabla Z.
 </p>
+
 + Transacción SE11
 + Definimos la descripción de usuario y la clase de entrega.
 
