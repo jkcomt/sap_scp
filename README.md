@@ -3,6 +3,20 @@
 Este documento supone ser una introducción a temas de ABAP para principiantes.
 Su revisión y actualización está abierta a sugerencias.
 
+ [¿Qué es ABAP?](#%C2%BFQu%C3%A9-es-ABAP)  
+ [Diccionario de Datos](#Diccionario-de-Datos)
+ 
+ [Elementos del Diccionario de Datos](#Elementos-del-Diccionario-de-Datos)
+ 1. [Tablas](#1-Tablas)  
+    1.1 [Tablas Transparentes](#11-Tablas-Transparentes)  
+    1.2 [Tablas Pool](#12-Tablas-Pool-Pooled-Tables)  
+    1.3 [Tablas Cluster](#13-Tablas-Cluster-Cluster-Tables)
+2. [Componentes de Tablas](#2-Componentes-de-Tablas)  
+   2.1 [El Dominio](#21-El-Dominio)   
+   2.2 [Elemento de Datos](#22-Elemento-de-Datos)   
+   2.3 [Tablas](#23-Tablas)
+3. [Vista de Actualización](#3-Vista-de-Actualizaci%C3%B3n)
+
 ## ¿Qué es ABAP?
 
 <p align="justify">
@@ -174,3 +188,4 @@ Una imagen o vista de actualización es una forma que SAP nos proporciona para p
 [img tabla4]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen12.png
 [img tabla5]:http://desarrollofacil.com/wp-content/uploads/2016/09/Cap-2.png
 [img tabla6]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen14.png
+
