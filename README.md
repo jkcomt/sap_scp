@@ -4,10 +4,9 @@ Este documento supone ser una introducción a temas de ABAP para principiantes.
 Su revisión y actualización está abierta a sugerencias.
 
  [¿Qué es ABAP?](#%C2%BFQu%C3%A9-es-ABAP)  
- [Diccionario de Datos](#Diccionario-de-Datos)
- 
+ [Diccionario de Datos](#Diccionario-de-Datos)  
  [Elementos del Diccionario de Datos](#Elementos-del-Diccionario-de-Datos)
- 1. [Tablas](#1-Tablas)  
+1. [Tablas](#1-Tablas)  
     1.1 [Tablas Transparentes](#11-Tablas-Transparentes)  
     1.2 [Tablas Pool](#12-Tablas-Pool-Pooled-Tables)  
     1.3 [Tablas Cluster](#13-Tablas-Cluster-Cluster-Tables)
@@ -18,24 +17,21 @@ Su revisión y actualización está abierta a sugerencias.
 3. [Vista de Actualización](#3-Vista-de-Actualizaci%C3%B3n)
 
 ## ¿Qué es ABAP?
-
+---
 <p align="justify">
 ABAP (Advanced Business Application Programming) es un lenguaje de cuarta generación, propiedad de SAP, que se utiliza para programar la mayoría de sus productos (R/3, mySAP Business suite...). Utiliza sentencias de Open SQL para conectarse con prácticamente cualquier base de datos. Cuenta con miles de funciones para el manejo de archivos, bases de datos, fechas, etc. Permite conexiones RFC (Remote Function Calls) para conectar a los sistemas SAP con cualquier otro sistema o lenguaje de programación. 
 </p>
 
----
-
 ## Diccionario de Datos
-
+---
 <p align="justify">
 El Diccionario de Datos ABAP (Data Dictionary) es la fuente central de información sobre los datos almacenados en el sistema. Su rol principal es la creación y administración de las definiciones de datos (o metadatos)
 
 Ejemplos de las tareas que realizaremos desde el diccionario de datos de ABAP son la creación de tablas, incorporación y visualización de la información almacenada, definición de los tipos de datos que utilizan los campos de las tablas, definición de la documentación relacionada a cada campo y mucho más.
-
 </p>
 
 ## Elementos del Diccionario de Datos
-
+---
 ### 1. Tablas
 
 <p align="justify">
@@ -156,9 +152,8 @@ Una vez tenemos creados los Dominos y Elementos de Datos, crearemos la Tabla Z.
 
 [Más info][link abap1]
 
----
 ### 3. Vista de Actualización
-
+---
 <p align="justify">
 Una imagen o vista de actualización es una forma que SAP nos proporciona para poder introducir datos en tablas sin necesidad de entrar en el explorador de tablas ni tener que programar.
 </p>
