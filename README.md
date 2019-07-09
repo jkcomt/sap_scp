@@ -68,7 +68,9 @@ Guardan datos de diferentes tablas en una tabla de base de datos. En consecuenci
 ### 2. Componentes de Tablas
 ### 2.1 El Dominio
 
+<p align="justify">
 En un dominio podemos definir que valores puede tener un campo (caracteres, números enteros, números con decimales, …), así como la longitud de los mismos.
+</p>
 
 + Transacción SE11
 + Seleccionar la dominio y dar un nombre a nuestro dominio
@@ -86,7 +88,9 @@ En un dominio podemos definir que valores puede tener un campo (caracteres, núm
 
 ### 2.2 Elemento de Datos
 
+<p align="justify">
 En un Elemento de Datos definimos el dominio y la descripción del campo al que irá referenciado en la tabla.
+</p>
 
 + Transacción SE11
 + Seleccionamos la opción Tipo de Datos, damos un nombre y le damos a crear, a continuación se nos mostrará un Pop-Up en el que seleccionaremos la opción Elemento de Datos
@@ -101,14 +105,55 @@ En un Elemento de Datos definimos el dominio y la descripción del campo al que 
 
 ![img elem dato3]
 
-## Creación de Objectos en el Diccionario
+### 2.3 Tablas
+<p align="justify">
+Una vez tenemos creados los Dominos y Elementos de Datos, crearemos la Tabla Z.
+</p>
++ Transacción SE11
++ Definimos la descripción de usuario y la clase de entrega.
 
+![img tabla1]
+
++ Creamos los campos de la tabla y le asignamos el elemento de datos.
+
+![img tabla2]
+
+>**Clase de Entrega**: Se utiliza para controlar el transporte de datos de la tabla para una instalación, actualización o cópia del cliente y el transporte. También se utiliza para el mantenimiento extendido de la tabla. Para la mayoría de los casos se utilizara el tipo A.  
+>**Actualización Vista Tabla**: Se utiliza para las vistas de la tabla, vistas y mantenimiento , en nuestro caso seleccionamos Vista/actualización permitida con restricciones.
+
++ Definimos los campos de la tabla y le asignamos el elemento de datos a cada uno.
+
+![img tabla3]
+
+>Deberemos de marcar la clave de la tabla.
+
++ Configurar Opciones Técnicas de la tabla y definir los parámetros de memoria lógicos.
+
+![img tabla4]
+
+![img tabla5]
+
++ Definir categoría de aplicación de la tabla, en el menú de opciones superior Detalles > Categoría de Apliación.
+
+![img tabla6]
+>En función del tipo, definiremos como ampliaremos la tabla en el futuro, en nuestro caso seleccionamos Ampliable de cualquier manera.
+
++ Guardamos y Activamos.
+
+[Más info][link abap1]
+
+---
+### 3. Vista de Actualización
+
+<p align="justify">
+Una imagen o vista de actualización es una forma que SAP nos proporciona para poder introducir datos en tablas sin necesidad de entrar en el explorador de tablas ni tener que programar.
+</p>
 <!-- enlaces -->
 
 [tipos de tablas standard en sap]: https://www.blogdesap.com/2010/03/tablas-del-diccionario.html
 [tablas pool]:    https://training.logaligroup.com/tablas-pool/
 [tablas cluster]: https://training.logaligroup.com/tablas-cluster/
-
+[link abap1]: http://desarrollofacil.com/abap/
 <!-- imagenes -->
 
 [img tabla pool]:   https://training.logaligroup.com/wp-content/uploads/2018/05/01-12.png
@@ -120,7 +165,12 @@ En un Elemento de Datos definimos el dominio y la descripción del campo al que 
 [img dominio3]:http://desarrollofacil.com/wp-content/uploads/2016/09/Dominio_3.png
 
 [img elem dato1]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen8.png
-
 [img elem dato2]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen5.png
-
 [img elem dato3]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen6.png
+
+[img tabla1]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen9.png
+[img tabla2]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen10.png
+[img tabla3]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen11.png
+[img tabla4]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen12.png
+[img tabla5]:http://desarrollofacil.com/wp-content/uploads/2016/09/Cap-2.png
+[img tabla6]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen14.png
