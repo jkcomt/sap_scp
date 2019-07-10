@@ -157,7 +157,101 @@ Una vez tenemos creados los Dominos y Elementos de Datos, crearemos la Tabla Z.
 ---
 <p align="justify">
 Una imagen o vista de actualización es una forma que SAP nos proporciona para poder introducir datos en tablas sin necesidad de entrar en el explorador de tablas ni tener que programar.
+
+Posteriormente, si se desea acceder en forma más directa a la vista de mantenimiento, también puede ser conveniente y útil asociarla a una transacción.
 </p>
+
+### Crear la Vista de mantenimiento
+
+<p align="justify">
+El primer paso será acceder a la transacción SE11 donde será necesario ingresar el nombre de la tabla para la cual se desea crear la vista de mantenimiento.
+
+Asumiendo que la tabla fue creada previamente, bastará con ingresar el nombre de la misma en el campo correspondiente.
+
+En este caso, a modo de ejemplo, la tabla tiene como nombre ZDI_EMPLEADOS.
+</p>
+
+![img visual1]
+
+Luego será necesario seleccionar Change (Modificar).
+
+En la pantalla obtenida, se mostrará la estructura de la tabla y dirigirse a Utilities → Table Maintenance Generator.
+
+![img visual2]
+
+La próxima pantalla que aparecerá en este proceso será similar a la siguiente:
+
+![img visual3]
+
+Como se muestra en la figura precedente, será necesario seleccionar la opción Find Scr. Number(s).
+
+En la mayoría de los casos bastará con dejar la opción por defecto que es la primera:
+
+![img visual4]
+
+Finalmente, habrá que seleccionar el icono correspondiente a crear:
+
+![img visual5]
+
+Luego se deberá seleccionar el motivo por el cual se está creando la vista de mantenimiento:
+
+![img visual6]
+
+Es recomendable en la pantalla siguiente, dejar los valores que se muestran por defecto:
+
+![img visual7]
+
+El mensaje siguiente informa que la vista ha sido creada satisfactoriamente.
+
+![img visual8]
+
+Finalmente, para corroborar que la vista de mantenimiento ha sido creada correctamente, bastará con acceder a la transacción SM30 y colocar el nombre correspondiente a la tabla para la cual se ha creado la vista de mantenimiento, como se muestra en la figura siguiente:
+
+![img visual9]
+
+A partir de aquí, se podrán visualizar los datos al entrar a través de la opción Display o alterar los mismos entrando por la opción Maintain.
+
+### Asociar la vista de mantenimiento a una transacción
+
+Para poder asociar la vista de mantenimiento creada previamente a una transacción, los pasos a seguir serán los siguientes:
+
+Acceder a la transacción **SE93**:
+
+![img visual10]
+
+En esta pantalla se escribirá el nuevo nombre de la transacción y luego seleccionar Create (en este caso el nombre de la transacción será el mismo que el de la vista de mantenimiento y el de la tabla para que sea más claro el ejemplo, de todas formas, se podría asignar un nombre diferente).
+
+Habrá que ingresar una descripción (en este caso se eligió EMPLEADOS) y luego seleccionar la opción Transaction with parameters.
+
+![img visual11]
+
+En la siguiente pantalla será necesario configurar los siguientes parámetros:
+
++ **Transaction**: se indtroducirá SM30 (que corresponde a la transacción de vistas de mantenimiento).
+
++ **Name of screen field** (debajo de Default Values, abajo del lado izquierdo): se completará con VIEWNAME y se colocará en el parámetro Value, el nombre de la vista de mantenimiento creada (en este caso: ZDI_EMPLEADOS).
+
++ Finalmente será necesario tildar la opción ***Inherit GUI atributes.***
+
+![img visual12]
+
+Guarden los cambios realizados presionando ![img visual13]
+
+SAP solicitará información correspondiente al **Package** en el cual se está trabajando y el usuario responsable, como se presenta en la figura siguiente:
+
+![img visual14]
+
+Posteriormente, se solicitará información referente a la orden de transporte:
+
+![img visual15]
+
+Solo restará ingresar el nombre de la transacción recientemente creada y verificar que esté funcionando correctamente:
+
+![img visual16]
+
+Como último paso, ya a partir de aquí se puede acceder a la vista de mantenimiento creada previamente **accediendo a la transacción que fue creada recientemente**, como se muestra en la siguiente pantalla:
+
+![img visual18]
 <!-- enlaces -->
 
 [tipos de tablas standard en sap]: https://www.blogdesap.com/2010/03/tablas-del-diccionario.html
@@ -185,3 +279,22 @@ Una imagen o vista de actualización es una forma que SAP nos proporciona para p
 [img tabla5]:http://desarrollofacil.com/wp-content/uploads/2016/09/Cap-2.png
 [img tabla6]:http://desarrollofacil.com/wp-content/uploads/2016/09/Imagen14.png
 
+[img visual1]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-transaccion-SE11_1.png
+
+[img visual2]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-tip-generar-Vista-mantenimiento_2.png
+[img visual3]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-find-screen_3.png
+[img visual4]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-maint-screen-number_4.png
+[img visual5]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-crear-vista-mantenimiento_5.png
+[img visual6]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mant-razones-cambio_6.png
+[img visual7]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-razones-cambio-detail_7.png
+[img visual8]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-confirmacion-vista-mantenimiento-creada_8.png
+[img visual9]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-transaccion-SM30_9-1.png
+[img visual10]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-transacion-SE93_10-1.png
+[img visual11]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-transaction-with-parameters_11-1.png
+[img visual12]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-asociar-transaccion_12-2.png
+[img visual13]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-boton-SAVE.png
+[img visual14]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-crear-paquete_13.png
+[img visual15]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-orden-transporte_14.png
+[img visual16]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-ingresar-transaccion-vista-mantenimiento_15-1.png
+[img visual17]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-ingresar-transaccion-vista-mantenimiento_15-1.png
+[img visual18]:http://www.teknodatips.com.ar/images/tips/ABAP-Vista-mantenimiento-y-transaccion/SAP-TIP-vista-mantenimiento-final_16-1.png
