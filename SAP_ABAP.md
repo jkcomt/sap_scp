@@ -6,7 +6,7 @@ Su revisión y actualización está abierta a sugerencias.
  [¿Qué es ABAP?](#%C2%BFQu%C3%A9-es-ABAP)  
  [Diccionario de Datos](#Diccionario-de-Datos)  
  [Elementos del Diccionario de Datos](#Elementos-del-Diccionario-de-Datos)
-1. [Tablas](#1-Tablas)  
+ 1. [Tablas](#1-Tablas)  
     1.1 [Tablas Transparentes](#11-Tablas-Transparentes)  
     1.2 [Tablas Pool](#12-Tablas-Pool-Pooled-Tables)  
     1.3 [Tablas Cluster](#13-Tablas-Cluster-Cluster-Tables)
